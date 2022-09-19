@@ -1,0 +1,206 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: 100;
+	letter-spacing: 0.1em;
+	box-sizing: border-box;
+}
+
+
+header {
+	width: 100%;
+	text-align: center;
+	color: white;
+	height: 250px;
+	padding: 50px 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+section{
+	float: left;
+	font-weight: 300;
+	padding: 20px;
+	margin: 0;
+	width: 50%;
+	font-size: 14px;
+	color: #51215d;
+	box-sizing: border-box;
+}
+
+nav: after {
+	content:"";
+	clear:both;
+}
+
+nav li {
+	font-family: "Lucida Console", Monaco, monospace;
+	display:inline-block;
+	color: #333;
+	padding: 10px;
+	margin: 30px 0 0 30px;
+	list-style:none;
+	cursor: pointer;
+}
+
+nav li:hover {
+	transform: translate(0, -0.5em);
+}
+
+article {
+	clear: both;
+	padding: 10px 60px;
+}
+
+footer {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 11px;
+	color:  white;
+	clear: both;
+	padding: 30px 60px;
+	opacity: .7;
+}
+
+header:hover, footer:hover {
+	-webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+
+h1 {
+	font-family: Oswald;
+	letter-spacing: 0.2em;
+	margin-top: 100px;
+	text-align:center;
+	animation: blink0 3s linear reverse infinite;
+	text-shadow: 4px 3px 0px #b253b8;
+}
+
+h1:hover {
+	animation: none;
+	transform: rotate(10deg);
+}
+
+h2 {
+	font-family: 'Tourney', cursive;
+}
+
+h2:hover {
+	text-shadow: 0 0 10px #b253b8;
+}
+
+img {
+	max-width: 80%;
+    max-height: 80%;
+}
+
+@keyframes blink0 {
+  0% { opacity: 1; }
+	25% { opacity: 0.35;}
+  50% { opacity: 1; }
+	75% { opacity: 0.35; }
+  100% { opacity: 1; }
+}
+
+@media (min-width: 300px) and (max-width: 599px) {
+
+	header {
+		background-image:url('https://c.tenor.com/XFfVauOjAwgAAAAC/sailor-moon-anime.gif'); 
+	}
+
+	h2 {
+		color: #9e58c9;
+	}
+
+	body {
+		background-color: #f0decc;
+	}
+
+	nav li {
+		background-color: #fff6ed;
+		color: #e55eb0;
+		border: 2px solid #e55eb0;
+		border-radius: 10px;
+		font-size: 12px;
+	}
+
+	section {
+		width: 100%;
+	}
+
+	footer {
+		background-color:#e55eb0;
+	}
+}
+
+
+@media (min-width: 600px) and (max-width: 899px) {
+
+	header {
+		background-image:url('https://64.media.tumblr.com/711189ccb21ae9929ad9499975ebe137/14c50f610582d234-39/s540x810/9b48765755ef6e0a3cf2d4e0b588464eae06b1b5.gifv'); 
+	}
+
+	h2 {
+		color: #ea70a1;
+	}
+
+	body {
+		background-color: #fbe7e4;
+	}
+
+	nav li {
+		background-color: #fff9f7;
+		color: #7656c1;
+		border:  2px solid #7656c1;
+		border-radius: 10px;
+		font-size: 14px;
+	}
+
+	section {
+		width: 100%;
+	}
+
+	footer {
+		background-color:#7656c1;
+	}
+}
+
+@media (min-width: 900px) {
+
+	header {
+		background-image:url('https://i.pinimg.com/originals/fa/5f/d8/fa5fd85bead07977d198b77aa3c5aa47.gif'); 
+	}
+
+	h2 {
+		color: #1f3598;
+	}
+
+	body {
+		background-color: #fddeff;
+	}
+
+	nav li {
+		background-color: #fef5ff;
+		color: #b764ae;
+		border:  2px solid #b764ae;
+		border-radius: 10px;
+	}
+
+	footer {
+		background-color:#b764ae;
+	}
+
+}
+
+@media print, not screen {
+
+	nav, footer {
+		display:none;
+	}
+
+	a{
+		text-decoration:none;
+		color:inherit;
+	}
+}
